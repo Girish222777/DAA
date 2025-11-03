@@ -1,0 +1,64 @@
+Task 2: Algorithmic Problem Solving
+-------------------------------------------------
+Exercises 2.1 to 2.3
+-------------------------------------------------
+
+Exercise 2.1:
+-------------------------------------------------
+Aim:
+To arrange the given functions in increasing order of asymptotic (Big O) growth.
+
+Functions:
+1. log n
+2. n
+3. n log n
+4. n^2
+5. n^3
+6. 2^n
+7. n!
+8. √n
+9. log(log n)
+
+Result (in increasing order):
+log(log n) < log n < √n < n < n log n < n^2 < n^3 < 2^n < n!
+
+Conclusion:
+Logarithmic functions grow the slowest, while factorial growth dominates all others.
+
+
+Exercise 2.2 and 2.3:
+-------------------------------------------------
+Aim:
+To order the given functions according to their growth rate (from slowest to fastest).
+
+Given Functions:
+6n^3, n log6n, 4n, 8n^2, log2n, n log2n, log8n, 64, 8^2n
+
+Step 1 – Simplify the terms:
+- log8n and log2n → same asymptotic order O(log n)
+- n log6n and n log2n → same asymptotic order O(n log n)
+- 4n and constants (64) → linear and constant respectively
+- 6n^3, 8n^2 → polynomial (cubic and quadratic)
+- 8^2n → exponential
+
+Step 2 – Arrange from smallest to largest:
+64 < log8n < log2n < 4n < n log6n = n log2n < 8n^2 < 6n^3 < 8^2n
+
+Conclusion:
+Constants grow slowest, followed by logarithmic, linear, linearithmic, polynomial, and exponential functions.
+
+-------------------------------------------------
+Final Summary:
+-------------------------------------------------
+Order of common growth rates from slowest to fastest:
+1. Constant (O(1))
+2. Logarithmic (O(log n))
+3. Square Root (O(√n))
+4. Linear (O(n))
+5. Linearithmic (O(n log n))
+6. Polynomial (O(n^2), O(n^3))
+7. Exponential (O(2^n), O(8^n))
+8. Factorial (O(n!))
+
+Hence, as the input size (n) increases, factorial and exponential functions grow the fastest,
+while constant and logarithmic functions grow the slowest.
