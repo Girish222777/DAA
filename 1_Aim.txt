@@ -1,2 +1,0 @@
-Aim:
-To calculate the time complexities of given algorithms and estimate their orders of growth.
