@@ -1,4 +1,0 @@
-Linear Search (5): 0
-Binary Search (after sort, 5): 2
-Bubble Sort: [2, 3, 4, 5, 8]
-Merge Sort: [2, 3, 4, 5, 8]
