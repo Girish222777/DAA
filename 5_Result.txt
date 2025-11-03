@@ -1,0 +1,9 @@
+Result:
+The time complexities and orders of growth for the given algorithms are:
+
+1. Linear Search   → O(n)        → Linear Growth
+2. Binary Search   → O(log n)    → Logarithmic Growth
+3. Bubble Sort     → O(n^2)      → Quadratic Growth
+4. Merge Sort      → O(n log n)  → Linearithmic Growth
+
+Hence, Merge Sort is more efficient than Bubble Sort for large input sizes.
