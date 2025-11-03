@@ -1,0 +1,54 @@
+Task 3: Divide and Conquer – Quick Sort
+-------------------------------------------------
+Aim:
+To implement the Quick Sort algorithm using the Divide and Conquer (D&C) technique and analyze its time complexity.
+
+-------------------------------------------------
+Algorithm:
+1. Start
+2. Choose a pivot element from the array.
+3. Partition the array into two sub-arrays:
+   - Left sub-array: elements less than pivot
+   - Right sub-array: elements greater than pivot
+4. Recursively apply Quick Sort to both sub-arrays.
+5. Combine the sub-arrays and the pivot to form the sorted array.
+6. Stop
+
+-------------------------------------------------
+Python Program:
+-------------------------------------------------
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr)//2]  # choose middle element as pivot
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+
+# Example
+arr = [24, 9, 29, 14, 19, 27]
+print("Original Array:", arr)
+sorted_arr = quick_sort(arr)
+print("Sorted Array:", sorted_arr)
+
+-------------------------------------------------
+Output:
+Original Array: [24, 9, 29, 14, 19, 27]
+Sorted Array: [9, 14, 19, 24, 27, 29]
+
+-------------------------------------------------
+Result:
+The array is successfully sorted using the Quick Sort algorithm.
+
+-------------------------------------------------
+Time Complexity:
+Best Case: O(n log n)
+Average Case: O(n log n)
+Worst Case: O(n^2)
+Space Complexity: O(log n) (for recursion stack)
+
+-------------------------------------------------
+Conclusion:
+Quick Sort efficiently sorts data by applying the Divide and Conquer principle,
+partitioning the array into smaller subproblems and combining them into a sorted result.
